@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Loopii Player</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .legal-content h1 { font-family: 'Righteous', cursive; font-size: 2.25rem; margin-bottom: 1rem; }
+    .legal-content h2 { font-family: 'Righteous', cursive; font-size: 1.5rem; margin-top: 2rem; margin-bottom: 0.75rem; color: #10B981; }
+    .legal-content p { color: #94A3B8; line-height: 1.8; margin-bottom: 1rem; }
+    .legal-content ul { color: #94A3B8; padding-left: 1.5rem; margin-bottom: 1rem; }
+    .legal-content li { margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <nav class="fixed top-4 left-4 right-4 z-50 max-w-6xl mx-auto">
+    <div class="glass rounded-2xl px-6 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5 no-underline" aria-label="Loopii Player Home">
+        <img src="logo_full.png" alt="Loopii Player" class="h-8 w-auto rounded-full" />
+      </a>
+      <div class="hidden sm:flex items-center gap-8">
+        <a href="index.html#features" class="nav-link">Features</a>
+        <a href="index.html#download" class="nav-link">Download</a>
+      </div>
+      <a href="index.html#download" class="btn-accent text-sm font-semibold px-5 py-2 rounded-xl text-white no-underline">Download</a>
+    </div>
+  </nav>
+
+  <section class="pt-32 pb-20">
+    <div class="max-w-3xl mx-auto px-6 legal-content">
+      <div class="glass-card rounded-2xl p-8 sm:p-12">
+        <h1>Privacy Policy</h1>
+        <p class="text-sm text-[#64748B] mb-8">Last updated: May 2026</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>Loopii Player only collects data that is necessary for the app to function properly:</p>
+        <ul>
+          <li><strong>Spotify Account Data:</strong> When you connect your Spotify account via OAuth2, we access your playlists and liked songs. We never store your Spotify password.</li>
+          <li><strong>Local Music Metadata:</strong> We read metadata (title, artist, album) from your local MP3/FLAC files to display them in your library. This data stays on your device.</li>
+          <li><strong>Download History:</strong> A local record of your downloaded tracks is stored on your device for offline playback.</li>
+        </ul>
+
+        <h2>2. How We Use Your Data</h2>
+        <ul>
+          <li>Spotify data is used solely to display your library and map tracks to YouTube/Google sources for streaming.</li>
+          <li>No usage analytics, tracking cookies, or personal data is sent to external servers beyond what's required for Spotify API authentication.</li>
+          <li>Your data is never sold or shared with third parties.</li>
+        </ul>
+
+        <h2>3. Data Storage</h2>
+        <p>All your music data (playlists, downloads, cache) is stored locally on your Android device. No cloud storage of your personal music library is maintained.</p>
+
+        <h2>4. Third-Party Services</h2>
+        <p>Loopii Player interfaces with:</p>
+        <ul>
+          <li><strong>Spotify Web API:</strong> For playlist/library synchronization. Governed by Spotify's Privacy Policy.</li>
+          <li><strong>YouTube/Google Sources:</strong> For audio streaming. No user-identifying data is shared during stream requests.</li>
+        </ul>
+
+        <h2>5. Permissions</h2>
+        <p>The app requires storage permissions to access local music files and save downloaded tracks. These permissions are only used for the stated purposes.</p>
+
+        <h2>6. Contact</h2>
+        <p>If you have questions about this privacy policy, reach out via <a href="https://www.linkedin.com/in/med-abidi/" target="_blank" rel="noopener" class="text-[#10B981] hover:underline">LinkedIn</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/5 py-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <a href="index.html" class="flex items-center gap-2.5 no-underline">
+          <img src="logo_full.png" alt="Loopii Player" class="h-8 w-auto rounded-full" />
+        </a>
+        <div class="flex items-center gap-6">
+          <a href="privacy.html" class="footer-link">Privacy</a>
+          <a href="terms.html" class="footer-link">Terms</a>
+          <a href="https://github.com/HamaBTW" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="text-xs text-[#64748B]">Made with ❤️ by <a href="https://www.linkedin.com/in/med-abidi/" target="_blank" rel="noopener" class="text-[#94A3B8] hover:text-[#F8FAFC] transition-colors duration-200 no-underline">Med Abidi</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
