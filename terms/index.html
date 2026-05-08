@@ -10,6 +10,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../style.css" />
   <link rel="icon" href="../favicon.png" />
+  <script src="../script.js" defer></script>
   <style>
     .legal-content h1 { font-family: 'Righteous', cursive; font-size: 2.25rem; margin-bottom: 1rem; }
     .legal-content h2 { font-family: 'Righteous', cursive; font-size: 1.5rem; margin-top: 2rem; margin-bottom: 0.75rem; color: #10B981; }
@@ -21,16 +22,31 @@
 <body>
 
   <nav class="fixed top-4 left-4 right-4 z-50 max-w-6xl mx-auto">
-    <div class="glass rounded-2xl px-6 py-3 flex items-center justify-between">
-      <a href="../" class="flex items-center gap-2.5 no-underline" aria-label="Loopii Player Home">
-        <img src="../logo_full.png" alt="Loopii Player" class="h-8 w-auto rounded-full" />
-      </a>
-      <div class="hidden sm:flex items-center gap-8">
-        <a href="../#features" class="nav-link">Features</a>
-        <a href="../#download" class="nav-link">Download</a>
-        <a href="../how-to/" class="nav-link">How To</a>
+    <div class="glass rounded-2xl px-6 py-3">
+      <div class="flex items-center justify-between">
+        <a href="../" class="flex items-center gap-2.5 no-underline" aria-label="Loopii Player Home">
+          <img src="../logo_full.png" alt="Loopii Player" class="h-8 w-auto rounded-full" />
+        </a>
+        <div class="hidden sm:flex items-center gap-8">
+          <a href="../#features" class="nav-link">Features</a>
+          <a href="../#download" class="nav-link">Download</a>
+          <a href="../how-to/" class="nav-link">How To</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="../#download" class="btn-accent text-sm font-semibold px-5 py-2 rounded-xl text-white no-underline hidden sm:inline-flex">Download</a>
+          <button class="mobile-menu-btn sm:hidden p-2 text-[#94A3B8] hover:text-[#F8FAFC] transition-colors cursor-pointer" aria-label="Toggle menu">
+            <svg class="menu-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
       </div>
-      <a href="../#download" class="btn-accent text-sm font-semibold px-5 py-2 rounded-xl text-white no-underline">Download</a>
+      <div class="mobile-menu sm:hidden">
+        <div class="flex flex-col gap-3 border-t border-white/5 pt-4">
+          <a href="../#features" class="text-sm text-[#94A3B8] hover:text-[#F8FAFC] transition-colors no-underline py-1">Features</a>
+          <a href="../#download" class="text-sm text-[#94A3B8] hover:text-[#F8FAFC] transition-colors no-underline py-1">Download</a>
+          <a href="../how-to/" class="text-sm text-[#94A3B8] hover:text-[#F8FAFC] transition-colors no-underline py-1">How To</a>
+          <a href="../#download" class="btn-accent text-sm font-semibold px-5 py-2.5 rounded-xl text-white no-underline text-center mt-1">Download</a>
+        </div>
+      </div>
     </div>
   </nav>
 

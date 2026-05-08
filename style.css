@@ -189,6 +189,23 @@ body {
 
 .nav-link:hover { color: #F8FAFC; }
 
+/* Mobile menu */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.3s ease;
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.mobile-menu.open {
+  max-height: 300px;
+  opacity: 1;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
 /* Footer links */
 .footer-link {
   font-size: 0.75rem;
