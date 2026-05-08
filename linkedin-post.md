@@ -8,15 +8,19 @@ One tap. One download. All yours.
 
 — Built with Flutter, Riverpod, Hive, Dio, media_kit, YouTube Explode, and the Spotify API.
 
+— Dark theme: deep navy background (#0B0F19), emerald accent (#10B981), glassmorphism surfaces, DM Sans typography.
+
 If you've ever been frustrated by the same thing, give it a try. Link in comments. 🚀
+
+@hama_music_player
 
 ---
 
 ### Post Image Ideas (carousel/slideshow)
 
-1. **Cover slide** — App logo on dark background with tagline: "Your Spotify playlists. Offline. Forever."
-2. **Import playlist** — Screenshot of the app showing a Spotify playlist being imported
-3. **Search & download** — Search screen with a song result and a download button
-4. **Smart cache** — Simple diagram or illustration: play icon → auto-download → offline ready
-5. **Now playing offline** — The player screen with no wifi icon and the song playing from cache
-6. **Tech at a glance** — Flutter + Spotify + YouTube logos in a minimalist graphic
+1. **Cover slide** — App logo (emerald green + deep navy) on dark background with tagline: "Your Spotify playlists. Offline. Forever."
+2. **Import playlist** — Screenshot showing Spotify playlist import with the dark glass UI
+3. **Search & download** — Search screen with a song result and download button, emerald accent highlights
+4. **Smart cache** — Simple diagram: play icon → auto-download → offline ready (using the accent green)
+5. **Now playing offline** — Player screen with no-wifi icon, song info, and glassmorphism player controls
+6. **Tech at a glance** — Flutter + Spotify + YouTube logos + "Dark Theme" badge (#0B0F19 / #10B981) in a minimalist graphic
