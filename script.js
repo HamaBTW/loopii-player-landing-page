@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateActiveNav() {
     let activeId = null;
+    const scrollY = window.scrollY + 80;
     sections.forEach(s => {
-      const rect = s.getBoundingClientRect();
-      if (rect.top <= 160) activeId = s.id;
+      if (scrollY >= s.offsetTop) activeId = s.id;
     });
     navLinks.forEach(link => {
       link.classList.toggle('active', link.getAttribute('href').endsWith(activeId ?? 'none'));
