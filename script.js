@@ -13,15 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = ['features', 'download'].map(id => document.getElementById(id)).filter(Boolean);
   const navLinks = document.querySelectorAll('[href$="#features"], [href$="#download"]');
 
-  const sectionObs = new IntersectionObserver((entries) => {
+  function updateActiveNav() {
     let activeId = null;
-    entries.forEach(e => { if (e.isIntersecting) activeId = e.target.id; });
+    sections.forEach(s => {
+      const rect = s.getBoundingClientRect();
+      if (rect.top <= 160) activeId = s.id;
+    });
     navLinks.forEach(link => {
       link.classList.toggle('active', link.getAttribute('href').endsWith(activeId ?? 'none'));
     });
-  }, { threshold: 0.3, rootMargin: '-60px 0px -20% 0px' });
+  }
 
-  sections.forEach(s => sectionObs.observe(s));
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav();
 
   const btn = document.querySelector('.mobile-menu-btn');
   const menu = document.querySelector('.mobile-menu');
