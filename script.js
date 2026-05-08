@@ -10,23 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  const sections = ['features', 'download'].map(id => document.getElementById(id)).filter(Boolean);
-  const navLinks = document.querySelectorAll('[href$="#features"], [href$="#download"]');
-
-  function updateActiveNav() {
-    let activeId = null;
-    const scrollY = window.scrollY + 80;
-    sections.forEach(s => {
-      if (scrollY >= s.offsetTop) activeId = s.id;
-    });
-    navLinks.forEach(link => {
-      link.classList.toggle('active', link.getAttribute('href').endsWith(activeId ?? 'none'));
-    });
-  }
-
-  window.addEventListener('scroll', updateActiveNav, { passive: true });
-  updateActiveNav();
-
   const btn = document.querySelector('.mobile-menu-btn');
   const menu = document.querySelector('.mobile-menu');
   const icon = btn?.querySelector('.menu-icon');

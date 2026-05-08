@@ -188,8 +188,6 @@ body {
 }
 
 .nav-link:hover { color: #F8FAFC; }
-.nav-link.active { color: #10B981; }
-.mobile-menu a.active { color: #10B981; }
 
 /* Mobile menu */
 .mobile-menu {
